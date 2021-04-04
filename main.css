@@ -236,7 +236,7 @@ header.scrolling-active .navbar-Right__dropdown2 li a:hover,
         left: 0;
         width: 100%;
         height: calc(100vh);
-        padding: 50px 100px;
+        padding: 50px 0px;
         overflow: auto;
         text-align: center;
         flex-direction: column;
@@ -260,7 +260,7 @@ header.scrolling-active .navbar-Right__dropdown2 li a:hover,
     }
 
     .navbar-Right li{
-        margin-top: 0.2em;
+        padding-top: 0.3em;
 
     }
 
