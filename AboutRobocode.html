@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="Image/onlyLogo.png" type="image/gif" size="16x16">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@302&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="root.css">    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="paragraph.css">
+
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBOCODE 2021</title>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar" id="header">
+            <div class="navbar-Left">
+                <a href="index.html"><img src="Image/onlyLogo.png" alt="Logo" class="menuLeft-logo"></a>
+            </div>
+            <div class="navbar-Right">
+                <li class="navbar-Right__v"><a href="#" class="navbar-Right__item navbar-Right__v2" onclick="dropDownClick()" id="click">Giới Thiệu <i class="fas fa-caret-down"></i></a>
+                    <ul class="navbar-Right__dropdown" id="dropdown">
+                        <li><a href="AboutRobocode.html">Về Robocode</a></li>
+                        <li><a href="AboutEvent.html">Về Cuộc Thi</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-Right__v"><a href="#" class="navbar-Right__item navbar-Right__v2" onclick="dropDownClick2()" id="click2">Hướng Dẫn <i class="fas fa-caret-down"></i></a>
+                    <ul class="navbar-Right__dropdown2" id="dropdown2">
+                        <li><a href="https://www.howkteam.vn/course/lap-trinh-java-co-ban-den-huong-doi-tuong/cai-dat-moi-truong-java-3834" target="_blank">Cài đặt Java</a></li>
+                        <li><a href="DownloadRobocode.html">Cài đặt Robocode</a></li>
+                        <li><a href="CreateRobo.html">Tạo robo cơ bản</a></li>
+                    </ul>
+                </li>
+                <li><a href="RobocodeLibrary.html" class="navbar-Right__item">Thư Viện</a></li>
+                <li><a href="" class="navbar-Right__item">Gửi file Robocode</a></li>
+                <li><a href="https://www.facebook.com/CLBLapTrinhTrenThietBiDiDong" target="_blank" class="navbar-Right__item">Liên hệ</a></li>
+            </div>
+            <div class="navbar-btn" id="toggle">
+                <div class="navbar-btn__burger "onclick="toggle()"> </div>
+            </div>
+            </header>
+        <div class="main">
+            <div class="i-content">
+                <div class="paragraph">
+                    <h2 class="paragraph-h2">
+                        Robocode là gì?
+                    </h2>
+                    <p class="paragraph-content">
+                        Robocode là một trò chơi được viết chủ yếu trên ngôn ngữ lập trình Java và được phát triển bởi cộng đồng mã nguồn mở cho tới nay cũng đã gần được 20 năm. Trải qua nhiều năm, 
+                        Robocode cũng đã xuất hiện trên cả ngôn ngữ lập trình C# và Scala.
+                        Thoạt nhìn, trò chơi này nhìn giống thể loại bắn xe tăng thông thường. Người chơi sẽ tạo ra một chiếc xe tăng, và khi đưa lên sàn đấu, mục tiêu của nó là chiến đấu với các đối thủ khác để sống sót.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-h3">
+                        Vậy Robocode có gì đặc biệt?
+                    </h3>
+                    <p class="paragraph-content">
+                        Điểm đặc biệt nằm ở chính những chiếc xe tăng. Khi được đưa lên sàn đấu, người chơi hoàn toàn không điều khiển chúng. Thay vào đó, chúng tự hoạt động với trí 
+                        thông minh nhân tạo đã được cài đặt trước bởi người chơi. Chính vì vậy, mỗi xe tăng sẽ có chiến thuật riêng để tấn công cũng như phòng thủ.
+                    </p>
+                    <p class="paragraph-content">
+                        Cũng chính bởi điều này mà một số trường học, campus trên thế giới đã áp dụng 
+                        Robocode vào chương trình dạy học. Hơn thế, Robocode cũng được tổ chức thành các giải đấu lớn nhỏ bởi các trường học, các cộng đồng trong và ngoài nước.
+                    </p>
+                    <div class="paragraph-image">
+                        <img src="image/gioiThieu_anh1.png" alt="">
+                        <p>Hình ảnh về một giải đấu Robocode diễn ra ở Trung Quốc. Nguồn: programmersought.com</p>
+                    </div>                   
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-h3">
+                        Cơ chế chiến đấu của xe tăng
+                    </h3>
+                    <p class="paragraph-content">
+                        Mỗi xe tăng gồm 3 thành phần cơ bản: radar, đạn và chuyển động của xe tăng.
+                    </p>
+                    <p class="paragraph-content">
+                        Radar: Mỗi xe tăng sẽ được trang bị 1 radar để dò tìm xem kẻ thù ở đâu. Không chỉ dùng với mục đích tấn công mà còn được dùng để dự đoán hướng tấn công của quân địch, từ đó xác định chiến thuật né tránh, phòng thủ. Tuy vậy, Robocode cũng cung cấp cho 
+                        bạn 1 loại xe tăng đặc biệt gọi là Droid. Loại tăng này không có radar nhưng bù lại nó được trang bị thêm 20% giáp.
+                    </p>
+                    <p class="paragraph-content">
+                        Đạn: gây ra sát thương cho đối phương. Nếu bắn trúng thì địch bị (<i>power</i> * 4) sát thương, nếu <i>power</i> lớn hơn 1 thì cộng thêm 
+                        (<i>power</i> – 1) * 2 sát thương, đồng thời robot của bạn sẽ nhận lại được (<i>power</i> * 3) năng lượng. Ngược lại thì bạn mất <i>power</i> năng lượng. 
+                        Nên hãy chú ý cách sử dụng năng lượng sao cho hiệu quả, chứ không phải khi nào bắn <i>power</i> mạnh cũng là tốt. VD: 
+                    </p>
+                    <p class="paragraph-content">Chuyển động của xe tăng: </p>  
+                    <p class="paragraph-content">Chưa hết, ngoài khả năng chiến đấu độc lập, những chiếc xe tăng trên cũng có thể tập hợp thành đội để cùng chống lại 
+                        một nhóm xe tăng khác (tất nhiên, điều này cũng phải được lập trình bởi người chơi). </p> 
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-h3">
+                        Thể lệ thi đấu
+                    </h3>
+                    <p class="paragraph-content">
+                        Theo thông lệ thi đấu quốc tế, Robocode có 4 kiểu thi đấu chính: 1 vs 1, 2 vs 2, 5 vs 5 và hỗn chiến (10 robot độc lập tàn sát lẫn nhau). 
+                        Thông thường, các robot sẽ đấu khoảng 5-10 trận tính điểm để chọn ra người thắng cuộc.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-h3">
+                        Lập trình một chiếc xe tăng liệu có khó?
+                    </h3>
+                    <p class="paragraph-content">
+                        Việc thiết kế một con robo hoàn toàn không khó bởi nó đã cung cấp cho người chơi một API đầy đủ. Với API này, việc điều khiển robot di chuyển
+                        và tấn công vô cùng dễ dàng. Thậm chí, người chơi cũng không cần phải lo về hình hài của con Robocode vì đã được làm sẵn. Vì vậy, chỉ với 
+                        khoảng 20 dòng code là người chơi đã có thể có 1 robot đơn giản.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <h3 class="paragraph-h3">
+                        Một người chưa hiểu, chưa biết gì về Java liệu có thể tham gia?
+                    </h3>
+                    <p class="paragraph-content">
+                        Tất nhiên là được. Chỉ cần bạn biết về lập trình cơ bản hoặc bạn có niềm đam mê với trí tuệ nhân tạo là đủ. 
+                        Và khi tham gia bạn sẽ được lợi ích là hiểu thêm về Java, tăng khả năng tư duy và kinh nghiệm lập trình của bạn.
+                    </p>
+                </div>
+            </div>
+</body>
+
+</html>
