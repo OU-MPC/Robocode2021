@@ -311,8 +311,9 @@ header.scrolling-active .navbar-Right__dropdown2 li a:hover,
     .navbar-Right__item,
     .navbar-Right__dropdown li a,
     .navbar-Right__dropdown2 li a{
+        margin-top: 0.95em;
         width: 100%;
-        font-size: 1em;
+        font-size: 1.6em;
         color: var(--text-color);
     }
 
@@ -332,19 +333,18 @@ header.scrolling-active .navbar-Right__dropdown2 li a:hover,
         transition: .5s;
     }
 
-
-    .navbar-Right li,
-    .navbar-Right__dropdown li a,
-    .navbar-Right__dropdown2 li a{
-        margin-top: 0.95em;
-    }
-
     .navbar-Right__dropdown li,
     .navbar-Right__dropdown2 li{
+        margin-top: .5em;
         margin-left: 5em;
         text-align: left;
     }
 
+    .navbar-Right__dropdown li:first-child,
+    .navbar-Right__dropdown2 li:first-child{
+        margin-top: 1em;
+        
+    }
 
 
     div.navbar-btn{
@@ -379,12 +379,4 @@ header.scrolling-active .navbar-Right__dropdown2 li a:hover,
         letter-spacing: 0.1em;
         font-size: 3em;
     }
-
-    .navbar-Right__item,
-    .navbar-Right__dropdown li a,
-    .navbar-Right__dropdown2 li a{
-        width: 100%;
-        font-size: 0.95em;
-        color: var(--text-color);
-    }
-  }
+}

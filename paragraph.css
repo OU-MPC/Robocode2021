@@ -79,9 +79,6 @@
 
 @media (max-width: 900px)
 {
-    .container{
-        width: 95%;
-    }
 
     .paragraph-image{
         max-width: 100%;
