@@ -277,6 +277,11 @@ header.scrolling-active .navbar-Right__dropdown2 li a:hover,
         width: 15em;
     }
     
+    .navbar-Right__item,
+    .navbar-Right__dropdown,
+    .navbar-Right__dropdown2{
+        margin-left: 0;
+    }
 
     header.scrolling-active .navbar-Right__dropdown,
     header.scrolling-active .navbar-Right__dropdown2{
