@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="Image/onlyLogo.png" type="image/gif" size="16x16">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@302&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="root.css">    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="paragraph.css">
+
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBOCODE 2021</title>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar" id="header">
+            <div class="navbar-Left">
+                <a href="index.html"><img src="Image/onlyLogo.png" alt="Logo" class="menuLeft-logo"></a>
+            </div>
+            <div class="navbar-Right">
+                <li class="navbar-Right__v"><a href="#" class="navbar-Right__item navbar-Right__v2" onclick="dropDownClick()" id="click">Giới Thiệu <i class="fas fa-caret-down"></i></a>
+                    <ul class="navbar-Right__dropdown" id="dropdown">
+                        <li><a href="AboutRobocode.html">Về Robocode</a></li>
+                        <li><a href="AbutOurContest.html">Về Cuộc Thi</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-Right__v"><a href="#" class="navbar-Right__item navbar-Right__v2" onclick="dropDownClick2()" id="click2">Hướng Dẫn <i class="fas fa-caret-down"></i></a>
+                    <ul class="navbar-Right__dropdown2" id="dropdown2">
+                        <li><a href="https://www.howkteam.vn/course/lap-trinh-java-co-ban-den-huong-doi-tuong/cai-dat-moi-truong-java-3834" target="_blank">Cài đặt Java</a></li>
+                        <li><a href="maintenance.html">Cài đặt Robocode</a></li>
+                        <li><a href="maintenance.html">Tạo robo cơ bản</a></li>
+                    </ul>
+                </li>
+                <li><a href="maintenance.html" class="navbar-Right__item">Thư Viện</a></li>
+                <li><a href="maintenance.html" class="navbar-Right__item">Gửi file Robocode</a></li>
+                <li><a href="https://www.facebook.com/CLBLapTrinhTrenThietBiDiDong" target="_blank" class="navbar-Right__item">Liên hệ</a></li>
+            </div>
+            <div class="navbar-btn" id="toggle">
+                <div class="navbar-btn__burger "onclick="toggle()"> </div>
+            </div>
+            </header>
+        <div class="main">
+            <div class="i-content">
+                <div class="paragraph">
+                    <h4 class="paragraph-h4">
+                        > Cuộc Thi Robocode 2021
+                    </h4>    
+                     <br>
+                    <h2 class="paragraph-h2">
+                        Sơ Lược:
+                    </h2>
+                    
+                    <p class="paragraph-content">
+                        Tiếp nối cuộc thi Robocode 2020, CLB Lập trình trên thiết bị di động tiếp tục tổ chức một cuộc thi đầy tính cạnh tranh này. 
+                        Khác với năm ngoái cũng như tăng thêm phần kịch tính, năm nay sẽ kết hợp với hình thức Hackathon.
+                     </p>
+                     <p class="paragraph-content">
+                         Đối tượng tham gia: Sinh viên Khoa CNTT trường Đại Học Mở TP.HCM. 
+                     </p>
+                     <br>
+                     <h4 class="paragraph-h4">
+                         CƠ CẤU GIẢI THƯỞNG 
+                     </h4>
+                     <p class="paragraph-content">
+                        - 1 giải nhất: 500.000 đồng + 10 đrl + giấy khen <br>
+                        - 1 giải nhì: 300.000 đồng + 10 đr + giấy  khen <br>
+                        - 1 giải ba: 200.000 đồng  + 10 đr + giấy khen <br>
+                        - 1 giải thưởng cho đội thi được yêu thích nhất: phần quà BTC
+                     </p>   
+                </div>
+                <div class="paragraph">
+                    <h1 class="paragraph-h2">
+                        Thể Lệ Cuộc Thi:
+                    </h1>
+                    
+                    <p class="paragraph-content">
+                            Thông Tin Chung Các Vòng: <br>
+                            - Vòng Bảng diễn ra vào Chủ nhật, ngày 18/04/2021. <br>
+                            - Vòng Trong, Vòng Chung Kết diễn ra vào Chủ nhật, ngày 02/05/2021. <br>
+                            - Bắt đầu vòng đấu đầu tiên, có 30 phút để các đội chế tạo robo chiến đấu và nộp về cho BTC. <i>Các đội có thể tạo sẵn robo tại nhà và đem lên nộp về cho BTC.</i>
+                            BTC khuyến khích mọi người cùng nhau bàn chiến thuật cũng như tìm hiểu trước!. <br>
+                            - Mỗi vòng đấu, BTC sẽ chỉnh kích thước sàn đấu khác nhau. Dựa theo thông lệ thi đấu quốc tế, kích thước sàn đấu sẽ tối đa 1000 x 1000 với hình thức đấu bảng và hỗn chiến
+                            và 800 x 800 vời hình thức thi đấu solo.<br>
+                            - Cứ sau 2 vòng đấu, các đội có thể chỉnh sửa, nâng cấp robo của mình vào nộp lại về cho BTC trong vòng 10 phút.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <h2 class="paragraph-h2">Vòng Bảng:</h2>
+                    <div class="paragraph-image">
+                        <img src="Image/soDoVongBang.png" alt="soDoVongBang">
+                    </div>  
+                    <p class="paragraph-content">
+                       Vòng Bảng có tổng cộng 3 bảng, mỗi bảng có 4 đến 5 đội. <br> 
+                       Có tổng cộng 4 vòng đấu, mỗi vòng đấu có tất cả 8 rounds. <br>
+                       BTC sẽ lấy ra 2 đội có tổng điểm (Total Score) cao nhất mỗi vòng để tiến vào Vòng Trong.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <h2 class="paragraph-h2">Vòng Trong:</h2>
+                    <div class="paragraph-image">
+                        <img src="Image/soDoVongTrong.png" alt="soDoVongTrong">
+                    </div>  
+                    <p class="paragraph-content">
+                       Vòng Trong có tổng cộng 2 phrase:<br>
+                       &gt Phrase 1:<br>
+                       6 đội thi đấu theo hình thức hỗn chiến 6 xe tăng. <br>
+                       Có tổng cộng 3 vòng đấu, mỗi vòng đấu có tất cả 12 rounds. <br>
+                       BTC sẽ lấy ra 2 đội có tổng điểm (Total Score) cao nhất để tiến vào Vòng Chung Kết theo Nhánh Thắng và 4 đội có Total Score thấp nhất vào Nhánh Thua để thi đấu phrase 2. <br>
+                       &gt Phrsae 2:<br>
+                       4 đội sẽ thi đấu theo thể thức solo Bo3 (3 vòng đấu). Mỗi vòng đấu có tất cả 10 rounds.<br>
+                       BTC sẽ lấy ra 2 đội solo giành chiến thắng (tính theo total score) để tiến vào Vòng Chung Kết theo Nhánh Thua.<br>
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <h2 class="paragraph-h2">Vòng Chung Kết:</h2>
+                    <div class="paragraph-image">
+                        <img src="Image/soDoVongChungKet.png" alt="soDoVongChungKet">
+                    </div>  
+                    <p class="paragraph-content">
+                       Vòng Chung Kết thi đấu theo thể thức solo Bo3 (3 vòng đấu), mỗi vòng đấu có 10 rounds và sắp xếp thi đấu như sau:<br>
+                       &gt Thắng nhánh 1 v.s Thua nhánh 2 &lt<br>
+                       &gt Thắng nhánh 2 v.s Thua nhánh 1 &lt<br>
+                       BTC sẽ lấy ra 2 đội solo giành chiến thắng (tính theo total score) để tiến vào trận đấu tranh top 1, top 2. Hai đội thua sẽ đấu nhau tranh top 3, top 4x.<br>
+                    </p>
+                </div>
+            </div>
+</body>
+
+</html>
