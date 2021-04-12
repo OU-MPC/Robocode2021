@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="Image/onlyLogo.png" type="image/gif" size="16x16">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@302&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="root.css">    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="paragraph.css">
+
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBOCODE 2021: CÀI ĐẶT</title>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar" id="header">
+            <div class="navbar-Left">
+                <a href="index.html"><img src="Image/onlyLogo.png" alt="Logo" class="menuLeft-logo"></a>
+            </div>
+            <div class="navbar-Right">
+                <li class="navbar-Right__v"><a href="#" class="navbar-Right__item navbar-Right__v2" onclick="dropDownClick()" id="click">Giới Thiệu <i class="fas fa-caret-down"></i></a>
+                    <ul class="navbar-Right__dropdown" id="dropdown">
+                        <li><a href="AboutRobocode.html">Về Robocode</a></li>
+                        <li><a href="AbutOurContest.html">Về Cuộc Thi</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-Right__v"><a href="#" class="navbar-Right__item navbar-Right__v2" onclick="dropDownClick2()" id="click2">Hướng Dẫn <i class="fas fa-caret-down"></i></a>
+                    <ul class="navbar-Right__dropdown2" id="dropdown2">
+                        <li><a href="https://www.howkteam.vn/course/lap-trinh-java-co-ban-den-huong-doi-tuong/cai-dat-moi-truong-java-3834" target="_blank">Cài đặt Java</a></li>
+                        <li><a href="CaiDatRobocode.html">Cài đặt Robocode</a></li>
+                        <li><a href="maintenance.html">Tạo robo cơ bản</a></li>
+                    </ul>
+                </li>
+                <li><a href="maintenance.html" class="navbar-Right__item">Thư Viện</a></li>
+                <li><a href="maintenance.html" class="navbar-Right__item">Gửi file Robocode</a></li>
+                <li><a href="https://www.facebook.com/CLBLapTrinhTrenThietBiDiDong" target="_blank" class="navbar-Right__item">Liên hệ</a></li>
+            </div>
+            <div class="navbar-btn" id="toggle">
+                <div class="navbar-btn__burger "onclick="toggle()"> </div>
+            </div>
+            </header>
+        <div class="main">
+            <div class="i-content">
+                <div class="paragraph">
+                    <h4 class="paragraph-h4">
+                        > Cài Đặt Robocode 
+                    </h4>    
+                </div>
+                <p class="paragraph-content">
+                    Cài đặt phần mềm Robocode là một trong những bước cơ bản đầu tiên để tham cuộc thi. Nó cung cấp cho bạn thư viện Robo và <u>cung cấp môi trường</u>  để code Java mà chủ yếu
+                    dùng để tạo ra một con robo trong Robocode.
+                </p>
+                <br>
+                <video width="80%" height="80%" controls class="paragraph-video" id="paragraph-video">
+                    <source src="Image/Cài đặt robocode 1.9.3.8.mp4" type="video/mp4">
+                    <source src="Image/Cài đặt robocode 1.9.3.8.ogg" type="video/ogg">
+                </video>        
+
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Trước khi vào cài đặt phần mềm Robocode, bạn bắt buộc phải cài đặt JDE. Nếu bạn chưa có thì hãy <a href="https://www.howkteam.vn/course/lap-trinh-java-co-ban-den-huong-doi-tuong/cai-dat-moi-truong-java-3834" target="_blank" rel="noopener noreferrer">click vào đây</a>
+                         để cài đặt JDE cũng như cài đặt Java.
+                    </p>
+                    <br>
+                    <p class="paragraph-content">
+                        Đầu tiên, bạn hãy click vào <a href="https://sourceforge.net/projects/robocode/files/robocode/1.9.3.8/" target="_blank" rel="noopener noreferrer">link sau</a> để truy cập vào website
+                        tải robocode-1.9.3.8-setup.jar (những phiên bản mới nhất có lỗi cài đặt nên không áp dụng cho cuộc thi này).
+                        <div class="paragraph-image">
+                            <img src="Image/CaiDatRobocode_Buoc1.png" alt="CaiDat_Buoc1">
+                        </div>    
+                    </p>
+                    <p class="paragraph-content">
+                        Sau khi cài đặt xong, ta mở thư mục chứa nó và <i>click chuột phải > Open with > OpenJDK Platform binary</i> sẽ hiện ra bảng "Installing Robocde", bạn chỉ cần click Yes.
+                        <div class="paragraph-image">
+                            <img src="Image/CaiDatRobocode_Buoc2.png" alt="CaiDat_Buoc2">
+                        </div>    
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <p class="paragraph-content">
+                        Để tham khảo một số tính năng cơ bản của phần mềm, hãy xem video từ đoạn 01:55 trở đi nhé :> 
+                    </p>
+                </div>
+            </div>
+</body>
+
+</html>
