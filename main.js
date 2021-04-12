@@ -3,13 +3,14 @@
 function toggle(){
     var header = document.getElementById("header");
     var menuBtn = document.getElementById("toggle");
+    var video = document.getElementById("paragraph-video");
     menuBtn.classList.toggle("open");
     header.classList.toggle("active");
+    video.classList.toggle("video-active");
+
 }
 
 /*Dropdown, navbar*/
-
-
         function dropDownClick() {
             document.getElementById("dropdown").classList.toggle("navbar-Right__dropdown___show");
             event.preventDefault();

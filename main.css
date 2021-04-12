@@ -221,7 +221,8 @@ header.scrolling-active .navbar-Right__item:hover,
 header.scrolling-active .navbar-Right__dropdown li a:hover,
 header.scrolling-active .navbar-Right__dropdown2 li a:hover,
 .navbar-Right__item:hover,
-.navbar-Right__dropdown li a:hover{
+.navbar-Right__dropdown li a:hover,
+.navbar-Right__dropdown2 li a:hover{
     color: var(--text-hoverColor);
     border-bottom: 1px solid var(--text-hoverColor);
     transition: 0.25s
@@ -252,7 +253,6 @@ header.scrolling-active .navbar-Right__dropdown2 li a:hover,
         
     }
 
-    
     header.active .navbar-Right{
         transform: translate(0);
         opacity: 1;

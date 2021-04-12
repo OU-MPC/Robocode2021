@@ -43,18 +43,35 @@
 }
 
 .paragraph-content,
-.paragraph-content i{
+.paragraph-content u,
+.paragraph-content i,
+.paragraph-content a{
     color: var(--content-color);
     margin-top: 0.5em;
     font-family: monospace;
     font-size: 1.2em;
     text-align: justify;
 }
+.paragraph-content a{
+    color: #686de0;
+}
+
+.paragraph-content a:hover,
+.paragraph-content a:active{
+    color: #7ed6df;
+    transition: 0.5s;
+}
+
+
 
 p img{
     width: 1.25em;
     height: 1.25em;
     color: #fff;
+}
+
+.paragraph-video{
+    margin: 0 8.5em;
 }
 
 .paragraph-image{
@@ -83,7 +100,15 @@ p img{
 
 @media (max-width: 900px)
 {
+    .paragraph-video{
+        margin: 0 0;
+        width: 100%;
+       
+    }
+    .video-active{
+        display: none;
 
+    }    
     .paragraph-image{
         max-width: 100%;
     }
