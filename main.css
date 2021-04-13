@@ -43,7 +43,7 @@ header.scrolling-active .navbar-Right__dropdown li a,
 header.scrolling-active .navbar-Right__dropdown2 li a{
     color: var(--black-color);
     text-shadow: 1px 2px 1px 2px var(--black-color);
-
+    
 }
 
 header.scrolling-active .menuLeft-logo{
@@ -98,6 +98,10 @@ header.scrolling-active .navbar-btn__burger::after{
     font-size: 1.15em;
     color: var(--text-color);
     text-decoration: none;
+}
+
+.navbar-Right__v{
+    position: relative;
 }
 
 .navbar-Right__dropdown,
@@ -271,7 +275,7 @@ header.scrolling-active .navbar-Right__dropdown2 li a:hover,
     .navbar-Right__dropdown,
     .navbar-Right__dropdown2{ 
         display: none;
-        position: static;
+
         background-color: transparent;
         left: 0;
         width: 15em;
