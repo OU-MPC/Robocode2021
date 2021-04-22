@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="Image/onlyLogo.png" type="image/gif" size="16x16">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@302&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="root.css">    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="paragraph.css">
+
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBOCODE 2021: TẠO ROBOT</title>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar" id="header">
+            <div class="navbar-Left">
+                <a href="index.html"><img src="Image/onlyLogo.png" alt="Logo" class="menuLeft-logo"></a>
+            </div>
+            <div class="navbar-Right">
+                <li class="navbar-Right__v"><a href="#" class="navbar-Right__item navbar-Right__v2" onclick="dropDownClick()" id="click">Giới Thiệu <i class="fas fa-caret-down"></i></a>
+                    <ul class="navbar-Right__dropdown" id="dropdown">
+                        <li><a href="AboutRobocode.html">Về Robocode</a></li>
+                        <li><a href="AbutOurContest.html">Về Cuộc Thi</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-Right__v"><a href="#" class="navbar-Right__item navbar-Right__v2" onclick="dropDownClick2()" id="click2">Hướng Dẫn <i class="fas fa-caret-down"></i></a>
+                    <ul class="navbar-Right__dropdown2" id="dropdown2">
+                        <li><a href="https://www.howkteam.vn/course/lap-trinh-java-co-ban-den-huong-doi-tuong/cai-dat-moi-truong-java-3834" target="_blank">Cài đặt Java</a></li>
+                        <li><a href="CaiDatRobocode.html">Cài đặt Robocode</a></li>
+                        <li><a href="CreateARobo.html">Tạo robo cơ bản</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://robocode.sourceforge.io/docs/robocode/" target="_blank" class="navbar-Right__item">Thư Viện</a></li>
+                <li><a href="maintenance.html" class="navbar-Right__item">Gửi file Robocode</a></li>
+                <li><a href="https://www.facebook.com/CLBLapTrinhTrenThietBiDiDong" target="_blank" class="navbar-Right__item">Liên hệ</a></li>
+            </div>
+            <div class="navbar-btn" id="toggle">
+                <div class="navbar-btn__burger "onclick="toggle()"> </div>
+            </div>
+            </header>
+        <div class="main">
+            <div class="i-content">
+                <div class="paragraph">
+                    <h4 class="paragraph-h4">
+                        > Tạo robot 
+                    </h4>    
+                </div>
+                <div class="paragraph">
+                    <div class="paragraph-content">
+                        <p class="paragraph-content">
+                                Tạo ra 1 chiếc robot xe tăng, tất nhiên là bạn có thể tạo chúng trên môi trường như Eclipse hoặc là Netbean hoặc là Intellij.
+                                Nhưng để đơn giản và dễ dàng test, các nhà phát triển đã tạo nên một môi trường cho phép bạn code robot cùng với thư viện của họ có sẵn trong trò chơi gọi là Robot Editor.
+                                Qua đây mình sẽ chỉ các bạn tạo ra một robot cơ bản trên chính phần mềm đó. <br>
+                                Đầu tiên, bạn cần phải mở phần mềm Robocode. Sau khi loading xong, bạn chọn Robot trên thanh Menu sau đó chọn Source Editor (hoặc tổ hợp phím Ctrl+E). <br>
+                                Khi màn hình "Robot Editor" hiện ra, chọn File > New > Robot (hoặc tổ hợp phím Ctrl+N). Bảng đầu tiên hiện lên là tên Robot, bảng thứ hai tương ứng với tên thư mục chứa file Robot. <br>
+                                Sau khi điền xong tên, các bạn hãy xem video bên dưới để biết thêm chi tiết nhé!
+
+                        </p>
+                    </div>
+                    <div class="paragraph-content">
+                        <video width="80%" height="80%" controls class="paragraph-video" id="paragraph-video">
+                            <source src="Image/CreateARobot.mp4" type="video/mp4">
+                            <source src="Image/CreateARobot.ogg" type="video/ogg">
+                        </video> 
+                    </div>
+                    <div class="paragraph-content">
+
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
